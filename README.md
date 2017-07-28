@@ -1,2 +1,2 @@
-# new-portfolio
-Comensando a desarrollar un nueva versión del portafolio con Foundation
+# Alpha dev of Francovich Bustamante
+Developing site of the new constructing 
