@@ -22,17 +22,19 @@
                       <div class="row collapse align-justify">
                         <div class="small-12 medium-6 columns">
                           <label>Nombre
-                            <input type="text" placeholder="Tu nombre">
+                            <input name="Lo envió:"type="text" placeholder="Tu nombre" aria-describedby="exampleHelpText" required>
+                            <span class="form-error">Yo, you had better fill this out, it's required.
+                            </span>
                           </label>
                         </div>
                         <div class="small-12 medium-6 columns">
                           <label>eMail
-                            <input type="email" name="_replyto" placeholder="Tu correo electrónico">
+                            <input type="email" name="Responder a:" placeholder="Tu correo electrónico">
                           </label>
                         </div>
                         <div class="column small-12">
                             <label>
-                              <textarea name="message" placeholder="Danos unos cuantos detalles de lo que tienes en mente construir"></textarea>
+                              <textarea name="Quiere:" placeholder="Danos unos cuantos detalles de lo que tienes en mente construir"></textarea>
                             </label>
                         </div>
                         <button class="column alert button small small-7" type="submit" value="Send" name="Go FB">Enviar
