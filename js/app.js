@@ -1,9 +1,8 @@
 $(document).foundation()
 var feed = new Instafeed({
-    get: 'user',
-    userId: 'stylustonypro',
-    accessToken: '3751148176.8b0da27.ac48429dc25b4d2ba0afa2f171c493ef'
-
+        get: 'tagged',
+        tagName: 'box',
+        clientId: '40b090e3c9924a6f91fbacb64071cd78'
     });
     feed.run();
 
