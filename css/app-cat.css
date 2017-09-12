@@ -278,9 +278,6 @@ buttom.hollow.button.secondary {
     margin-bottom: 2rem !important }
 /*Modal con slider de imagenes */
 /* Demo Styles */
-ul.orbit-container {
-    min-height: 100vh;
-}
 .reveal{
     background-color: rgba(2, 0, 8, 0.89);
     overflow: hidden;
@@ -288,7 +285,7 @@ ul.orbit-container {
 }
 nav.orbit-bullets {
     position: absolute;
-    bottom: -4px;
+    bottom: 48px;
     right: 7%;
 }
 .orbit-figure {
@@ -297,13 +294,8 @@ nav.orbit-bullets {
     justify-content: center;
     align-items: center;
 }
-.orbit-figure img{
-    height: 100%;
-    width: auto;
-}
-figcaption.orbit-caption {
-    padding-bottom: 0;
-    padding-left: 7rem;
+ul.orbit-container {
+    height: 100% !important;
 }
 /* Ends Modal con slider de imagenes */
   /*Deco and constructing sections portfolio ends*/
@@ -430,6 +422,10 @@ figcaption.orbit-caption {
   }
   .slogan{
       font-size: 1.4274em;
+  }
+  img.orbit-image {
+    height: 100%;
+    width: auto;
   }
 }
 @media screen and (min-width: 63.9375em) {}
