@@ -22,6 +22,8 @@
     ul.orbit-container {
         height: 103% !important;
     }
+    .close-button {
+        top: 3.7rem !important   }
 }
 @font-face {
   font-family: "foundation-icons";
