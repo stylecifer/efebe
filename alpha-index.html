@@ -9,7 +9,7 @@
         <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Fira+Sans:200,900|Roboto:400,400i,700">
         <!-- <link rel="stylesheet" href="css/foundation.css"> -->
         <link rel="stylesheet" href="css/foundation.css">
-        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/app-cat.css">
     </head>
     <body>
         <div class="off-canvas-wrapper">
@@ -66,87 +66,100 @@
                     </div>
                 </header><!-- End Hero section -->
                 <!-- Constructing Section -->
-                <section id="Constructing" class="Constructing flex-container full-height align-center align-middle" data-magellan-target="Constructing">
-                    <div class="row collapse small-11 large-12 align-middle align-center small-margin-bottom">
-                        <!-- One -->
-                        <div class="columns small-12 medium-5 large-3">
-                            <div class="image-wrapper overlay-slide-in-left">
-                                <img src="img/planificacion.jpg"/>
-                                <div class="image-overlay-content row align-center collapse align-middle">
-                                  <h3 class="column small-12">Diseño y planificación</h3>
-                                  <p class="column small-12 price">Asesoría y ejecución de proyectos constructivos habitacionales.</p>
-                                  <div class="flex-container align-spaced align-bottom small-12">
-                                      Francovich Bustamante
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Two -->
-                        <div class="columns small-12 medium-5 large-3">
-                            <div class="image-wrapper overlay-slide-in-left">
-                                <img src="img/obra-gruesa.jpg"/>
-                                <div class="image-overlay-content row collapse align-center align-middle">
-                                  <h3 class="column small-12">Obra Gruesa</h3>
-                                  <p class="column small-12 price">Ejecución de sistemas constructivos estructurales</p>
-                                  <div class="flex-container align-spaced align-bottom small-12">
-                                      Francovich Bustamante
-                                  </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Three -->
-                        <div class="columns small-12 medium-5 large-3">
-                            <div class="image-wrapper overlay-slide-in-left">
-                                <img src="img/terminaciones.jpg" />
-                                <div class="image-overlay-content row collapse align-center align-middle">
-                                    <h3 class="column small-12">Terminaciones</h3>
-                                    <p class="column small-12 price">Alto estándar en todo tipo de terminaciones complementado con asesoría decorativa.</p>
-                                    <div class="flex-container align-spaced align-bottom small-12">
-                                        Francovich Bustamante
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Four -->
-                        <div class="columns small-12 medium-5 large-3">
-                            <div class="image-wrapper overlay-slide-in-left">
-                                <img src="img/instalaciones.jpg" />
-                                <div class="image-overlay-content row collapse align-center align-middle">
-                                    <h3 class="column small-12">Instalaciones</h3>
-                                    <p class="column small-12 price">Diseños y ejecución de instalaciones domiciliarias</p>
-                                    <div class="flex-container align-spaced align-bottom small-12">
-                                        Francovich Bustamante
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Title and Lead -->
-                        <div class="column small-12 text-center Margin-top">
-                            <div class="row align-center">
-                                <div class="column medium-8">
-                                    <h2>Construción General</h2>
-                                    <p class="Margin-bottom-lead">Construcción, ampliación y remodelación habitacional.
-Con basta experiencia en obra gruesa, instalaciones y terminaciones. Involucrandonos desde la idea, la planificación, el desarrollo y la ejecución de cada proyecto, asegurando un resultado óptimo y de alto estándar.
-Contamos con equipos de trabajo calificados para cada área, dirigidos por profesionales del diseño y construcción. Teniendo como objetivo la calidad dentro de los plazos proyectados.</p>
-                                </div>
-                            </div>
-                        </div>
-                </section>
+
+                <!-- Constructing Section will goes here -->
                 <section id="Deco" class="Deco flex-container full-height align-center align-middle" data-magellan-target="Deco">
                     <div class="row collapse small-11 large-12 align-middle align-center small-margin-bottom">
                         <!-- One Telas-->
                         <div class="columns small-12 medium-5 large-3">
-                            <div class="image-wrapper overlay-slide-in-left">
+                            <div class="image-wrapper">
+                                <!-- overlay-slide-in-left -->
                                 <img src="img/telas.png"/>
-                                <div class="image-overlay-content row align-center collapse align-middle">
-                                  <h3 class="column small-12">Casa Zapallar</h3>
-                                  <p class="column small-12 price">Entelado de muros y cielos. Pátinas en pilares y vigas.</p>
-                                  <div class="flex-container align-spaced align-bottom small-12">
-                                      Francovich Bustamante
-                                  </div>
+                                <div class="image-overlay-content row collapse">
+                                  <h3 class="column small-12">
+                                      Telas
+                                  </h3>
+                                  <p class="column small-12 price">
+                                      Entelados clásicos y en panel.
+                                  </p>
+                                  <buttom class="hollow button secondary"data-toggle="animatedModal10">Conoce más</buttom>
                                 </div>
                             </div>
                         </div>
+                        <div class="full reveal" id="animatedModal10" data-reveal data-close-on-click="true" data-animation-in="scale-in-down" data-animation-out="scale-out-down">
+                            <!-- This demo uses flex grid but you can use float grid too -->
+                            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                                <div class="orbit-wrapper">
+                                    <div class="orbit-controls">
+                                      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                                      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                                    </div>
+                                    <!-- Start the slider images -->
+                                    <ul class="orbit-container">
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img/paneles/entelad-paneles-muro-respaldo-cama-efebe-0.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Entelados en paneles</h4>
+                                                  <h3>Muro respaldo de cama</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\paneles\entelado-paneles-muro-respaldo-cama-efebe.jpeg" alt="EFEBE">
+                                          <figcaption class="orbit-caption">
+                                              <h4>Entelados en paneles</h4>
+                                              <h3>Muro respaldo de cama</h3>
+                                          </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\paneles\entelado-paneles-sala-sonidos-efebe.jpeg" alt="Space">
+                                          <figcaption class="orbit-caption">
+                                              <h4>Entelados en paneles
+                                              </h4>
+                                              <h3>Sala de sonido</h3>
+                                          </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\paneles\entelado-paneles-sala-sonido-efebe-0.jpg" alt="Space">
+                                          <figcaption class="orbit-caption">
+                                              <h4>
+                                                  Entelados en paneles
+                                              </h4>
+                                              <h3>Sala de sonido</h3>
+                                          </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="orbit-slide">
+                                          <figure class="orbit-figure">
+                                              <img src="img\paneles\entelado-panel-sala-cine-efebe.jpeg" alt="EFEBE Telas" class="orbit-image">
+                                          <figcaption class="orbit-caption">
+                                              <h4>Entelados en paneles</h4>
+                                              <h3>Sala de cine</h3>
+                                          </figcaption>
+                                      </figure>
+                                      </li>
+
+                                    </ul>
+                                    <nav class="orbit-bullets">
+                                        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                                        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                                        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                                        <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                                    </nav>
+                                </div>
+                            </div>
+                            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                                <span aria-hidden="true">
+                                    &times;
+                                </span>
+                            </button>
+                        </div> <!--Reveal - Ends-->
                         <!-- Two Papeles-->
                         <div class="columns small-12 medium-5 large-3">
                             <div class="image-wrapper overlay-slide-in-left">

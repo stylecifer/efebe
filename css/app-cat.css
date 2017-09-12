@@ -1,0 +1,435 @@
+/*
+ * Foundation Icons v 3.0
+ * Made by ZURB 2013 http://zurb.com/playground/foundation-icon-fonts-3
+ * MIT License
+ */
+@media screen and (max-width: 39.9375em) {
+    a.button.small {
+      padding-top: 1.2em;
+      padding-bottom: 1.2em;
+      margin-bottom: 0.5rem;
+      width: 100% !important;
+    }
+    .hero .lead{
+        font-size: 100%;
+    }
+    h2 {
+      margin-bottom:1.8em
+    }
+}
+@font-face {
+  font-family: "foundation-icons";
+  src: url("../foundation-icons/foundation-icons.eot");
+  src: url("../foundation-icons/foundation-icons.eot?#iefix") format("embedded-opentype"),
+       url("../foundation-icons/foundation-icons.woff") format("woff"),
+       url("../foundation-icons/foundation-icons.ttf") format("truetype"),
+       url("../foundation-icons/foundation-icons.svg#fontcustom") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+.fi-social-linkedin:before,
+.fi-social-facebook:before,
+.fi-social-twitter:before,
+.fi-social-github:before,
+.fi-social-youtube:before,
+.fi-list::before,
+.fi-x::before,
+.fi-layout::before,
+.fi-video::before,
+.fi-play-circle::before,
+.fi-photo::before,
+.fi-at-sign::before,
+.fi-address-book::before,
+.fi-torso-business::before,
+.fi-eye::before {
+    font-family: "foundation-icons";
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    text-decoration: inherit;
+    /* color: lightgrey; */
+}
+.fi-social-linkedin:before {
+    content: "\f1d0"; }
+.fi-social-twitter:before{
+    content: "\f1e4"; }
+.fi-social-facebook:before {
+    content: "\f1c4"; }
+.fi-social-github:before{
+    content: "\f1c9" }
+.fi-social-youtube:before{
+    content: "\f1ea" }
+.fi-list:before{
+    content: "\f169" }
+.fi-x:before{
+    content: "\f217" }
+.fi-layout::before{
+    content: "\f162" }
+.fi-play-circle::before{
+    content: "\f196" }
+.fi-video::before{
+    content: "\f20e" }
+.fi-photo::before{
+    content: "\f195" }
+.fi-at-sign::before{
+    content: "\f113" }
+.fi-address-book::before{
+    content: "\f100" }
+.fi-torso-business::before{
+    content: "\f1fc"
+}
+.fi-eye::before{
+    content: "\f147"
+}
+a {
+    color: #009bff;
+}
+footer a{
+    color: white }
+h1,
+h2,
+h3 {
+    font-family: "Fira Sans" !important;
+    text-transform:uppercase;
+}
+body{
+    color: rgba(255, 255, 255, 0.91);
+    font-family: "Fira Sans"
+}
+/* Variables */
+/* Samall Navegation */
+/* Hero section */
+.hero {
+    background: url("../img/hero-image.jpg") no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+}
+ .logo{
+     margin-bottom: .3em;
+     font-size: 2rem;
+     color:white;
+ }
+.hero .brand{
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 4.34em;
+    font-weight: lighter;
+    margin-bottom: -19px;
+}
+.slogan{
+    color: #009bff;
+    font-family: "Fira Sans";
+    font-size: .72em;
+    font-weight: lighter;
+    margin-bottom: 0;
+}
+.brand{
+    margin-bottom:-.3em
+}
+.logo-icon {
+    margin: 7px 10px 7px 0;
+    max-width: 53px;
+}
+.Icon {
+  margin-right: 10px;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
+  cursor: pointer;
+}
+.Icon span {
+  display: block;
+  position: absolute;
+  left: 7px;
+  top: 21px;
+  height: 8px;
+  width: 67%;
+  background: rgb(172, 24, 52);
+  border-radius: 4px;
+  transform: rotate(0deg);
+  transition: .2s ease-in-out;
+}
+.Icon span:nth-child(1),
+.Icon span:nth-child(3) {
+  width: 48%;
+  transform: rotate(45deg);
+}
+.Icon span:nth-child(1) {
+  left: 8px;
+  top: 18px;
+}
+.Icon span:nth-child(2) {
+  transform: rotate(-45deg);
+}
+.Icon span:nth-child(3) {
+  left: 16px;
+  top: 23px;
+}
+.Icon.open span:nth-child(1),
+.Icon.open span:nth-child(3) {
+    left: 3px;
+}
+.Icon.open span:nth-child(1) {
+  top: 14px;
+  transform: rotate(135deg);
+}
+.Icon.open span:nth-child(2) {
+  transform: rotate(0deg);
+}
+.Icon.open span:nth-child(3) {
+  top: 29px;
+  transform: rotate(45deg);
+}
+:focus{
+    outline: none
+}
+.hero .lead {
+    font-weight: lighter;
+    line-height: 1.3;
+    font-family: "Fira Sans";
+    margin: 1em 0;
+}
+.button.hollow.alert {
+    margin: 0 auto;
+    border: 1px solid #ff0058;
+    color: #ff0058;
+}
+.position-bottom {
+    height:auto;
+    -ms-transform: translateY(376px);
+        transform: translateY(376px);
+    }
+/*End Hero section */
+/*Deco & Constructing sections portfolio - La clase "overlay-slide-in-left" Es la que hace el efecto de rollOver y adesplasamiento de la imagen  */
+.image-wrapper {
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  height: auto;
+  overflow: hidden;
+  position: relative;
+  /*text-align: center;*/
+  width: 100%;
+}
+.image-overlay-content {
+    background-color: rgba(0, 5, 14, 0.59);
+  /*width: 100%;
+  height: 100%;*/
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  padding: 2% 5%;
+  position: absolute;
+}
+buttom.hollow.button.secondary {
+    min-width: 45%;
+}
+.overlay-slide-in-left img {
+  transition: all 0.3s ease-in-out;
+}
+.overlay-slide-in-left .image-overlay-content{
+  /*background-image: url(http://www.awwwards.com/awards/images/2015/04/pattern.jpg);*/
+  background: rgba(247,72,116,1);
+  background: -moz-linear-gradient(-45deg, rgba(247,72,116,1) 0%, rgba(255,0,48,1) 40%, rgba(255,0,48,1) 66%, rgba(199,20,85,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(247,72,116,1)), color-stop(40%, rgba(255,0,48,1)), color-stop(66%, rgba(255,0,48,1)), color-stop(100%, rgba(199,20,85,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(247,72,116,1) 0%, rgba(255,0,48,1) 40%, rgba(255,0,48,1) 66%, rgba(199,20,85,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(247,72,116,1) 0%, rgba(255,0,48,1) 40%, rgba(255,0,48,1) 66%, rgba(199,20,85,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(247,72,116,1) 0%, rgba(255,0,48,1) 40%, rgba(255,0,48,1) 66%, rgba(199,20,85,1) 100%);
+  background: linear-gradient(135deg, rgba(247,72,116,1) 0%, rgba(255,0,48,1) 40%, rgba(255,0,48,1) 66%, rgba(199,20,85,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f74874', endColorstr='#c71455', GradientType=1 );
+  transform: translateX(-110%);
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
+  box-shadow: 0 0 7px #ccc; }
+.overlay-slide-in-left h3 {
+    margin: 0;
+    font-size: 1.33em;
+    font-weight: bolder; }
+.overlay-slide-in-left p {
+    opacity: 0;
+    transition: all 0.2s linear; }
+.overlay-slide-in-left .button {
+    margin-bottom: 0;
+    /* display: inline-block; */
+    /* text-decoration: none; */
+    padding: 5px 14px;
+    background: #1c0a25;
+    /* color: #fff; */
+    text-transform: uppercase;
+    box-shadow: 0 0 1px #000;
+    /* position: relative; */
+    border-radius: 7px; }
+.overlay-slide-in-left .button:hover {
+    background-color: #444; }
+.overlay-slide-in-left:hover .image-overlay-content {
+    transform: translateX(0px); }
+.overlay-slide-in-left:hover img {
+    transform: translateX(80%);
+    transition-delay: 0.1s; }
+.overlay-slide-in-left:hover p {
+    opacity: 1;
+    transition-delay: 0.4s;
+    margin: 0 }
+.Margin-bottom-lead{
+    margin-bottom: 2rem !important }
+/*Modal con slider de imagenes */
+/* Demo Styles */
+ul.orbit-container {
+    min-height: 100vh;
+}
+.reveal{
+    background-color: rgba(2, 0, 8, 0.89);
+    overflow: hidden;
+    padding: 0;
+}
+nav.orbit-bullets {
+    position: absolute;
+    bottom: -4px;
+    right: 7%;
+}
+.orbit-figure {
+    height: 100vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.orbit-figure img{
+    height: 100%;
+    width: auto;
+}
+figcaption.orbit-caption {
+    padding-bottom: 0;
+    padding-left: 7rem;
+}
+/* Ends Modal con slider de imagenes */
+  /*Deco and constructing sections portfolio ends*/
+ /*Footer Contact*/
+.linkedin, .facebook, .twitter, .github, .youtube{
+    border-radius: 2px;
+    display: block;
+    height: 100%;
+    padding: 6% 0 3%;
+    width: 100%;
+}
+.twitter{
+    color: #00aced
+}
+.twitter:hover {
+    color: white;
+  background:#00aced }
+.facebook{
+    color: #2163ec;
+}
+.facebook:hover {
+    color: white;
+  background:#3b5998 }
+.github{
+    color: #9c36fb;
+}
+.github:hover {
+    color: white;
+    background:#5f04b4;
+}
+.linkedin{
+    color: #007bb6
+}
+.linkedin:hover {
+    color: white;
+    background:#007bb6 }
+.gplus:hover {
+    color: white;
+    background:#007bb6 }
+.youtube{
+    color: #b00
+}
+.youtube:hover {
+    color: white;
+  background:#b00 }
+.vine:hover {
+    color: white;
+  background:#00bf8f }
+.linkedin:hover,
+.facebook:hover,
+.twitter:hover,
+.github:hover,
+.youtube:hover{
+    transition-duration: .8s;
+    transition-timing-function: cubic-bezier(0, 0.74, 0.9, 0.99);
+}
+.social-toniodis{
+    margin: 2em 0 3em
+}
+.footer{
+    margin: 2em 0
+}
+ /*Footer Contact End*/
+.Constructing{
+    background-color: #181f27;
+}
+.Deco, .Contact{
+    background-color: #ced4da;
+    color: #0a0a0a
+}
+.image-overlay-content {
+    color: white;
+}
+.Shadows{
+    box-shadow: 1px 2px 12px 2px rgba(0, 0, 0, 0.4);
+}
+.Icon-title {
+    text-shadow: 2px 2px 4px #030331;
+    padding: 47px 1px;
+    background-color: #095ab7;
+    font-size: 3em;
+    border-radius: 50%;
+    font-weight: bolder;
+    box-shadow: inset 2px 2px 5px 2px rgba(7, 25, 59, 0.35);
+}
+.small-margin-top{
+    margin-top: 2em;
+}
+.small-margin-bottom{
+    margin-bottom: 2em }
+.js-off-canvas-overlay{
+    background-color: rgba(25, 20, 31, 0.78) }
+.Margin-top{
+    margin-top: 2rem }
+/* Medium-Up Navigation */
+@media only screen and (min-width:40em){
+  .logo-icon {
+    border-radius: 19px;
+    /* margin: 7px ; */
+    max-width: 53px;
+  }
+  .logo-icon img {
+    border-radius: 6px;
+  }
+  .top-bar {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+  }
+  .top-bar ul{
+  background-color: transparent;
+  }
+  .hero h1{
+    font-size:8em;
+  }
+ .full-height{
+      min-height: 100vh
+  }
+  .small-margin-top{
+      margin-top: 0;
+  }
+  .small-margin-bottom{
+      margin-top: 0;
+  }
+  .slogan{
+      font-size: 1.4274em;
+  }
+}
+@media screen and (min-width: 63.9375em) {}
