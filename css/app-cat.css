@@ -16,6 +16,12 @@
     h2 {
       margin-bottom:1.8em
     }
+    div#animatedModal10 {
+        top: -50px !important;
+    }
+    ul.orbit-container {
+        height: 103% !important;
+    }
 }
 @font-face {
   font-family: "foundation-icons";
