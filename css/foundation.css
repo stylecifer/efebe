@@ -3164,7 +3164,8 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   margin-bottom: 0;
   padding: 1rem;
   background-color: rgba(10, 10, 10, 0.5);
-  color: #fefefe; }
+  color: #fefefe;
+  }
 
 .orbit-previous, .orbit-next {
   position: absolute;
@@ -3190,19 +3191,22 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   position: relative;
   margin-top: 0.8rem;
   margin-bottom: 0.8rem;
-  text-align: center; }
+  text-align: center;
+  }
   [data-whatinput='mouse'] .orbit-bullets {
     outline: 0; }
   .orbit-bullets button {
-    width: 1.2rem;
-    height: 1.2rem;
+    width: 0.5rem;
+    height: 0.5rem;
     margin: 0.1rem;
     border-radius: 50%;
-    background-color: #cacaca; }
+    background-color: #cacaca;
+    }
     .orbit-bullets button:hover {
       background-color: #8a8a8a; }
     .orbit-bullets button.is-active {
-      background-color: #8a8a8a; }
+      background-color: #5d0e32;
+      }
 
 .thumbnail {
   display: inline-block;
