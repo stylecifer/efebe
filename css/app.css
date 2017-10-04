@@ -9,13 +9,21 @@
       padding-bottom: 1.2em;
       margin-bottom: 0.5rem;
       width: 100% !important;
-  }
+    }
     .hero .lead{
         font-size: 100%;
-  }
-    h2{
-  margin-bottom:1.8em
-}
+    }
+    h2 {
+      margin-bottom:1.8em
+    }
+    div#animatedModal10 {
+        top: -50px !important;
+    }
+    ul.orbit-container {
+        height: 103% !important;
+    }
+    .close-button {
+        top: 3.7rem !important   }
 }
 @font-face {
   font-family: "foundation-icons";
@@ -96,15 +104,12 @@ h3 {
     font-family: "Fira Sans" !important;
     text-transform:uppercase;
 }
-
 body{
     color: rgba(255, 255, 255, 0.91);
     font-family: "Fira Sans"
 }
 /* Variables */
 /* Samall Navegation */
-
-
 /* Hero section */
 .hero {
     background: url("../img/hero-image.jpg") no-repeat center center;
@@ -122,7 +127,6 @@ body{
     font-weight: lighter;
     margin-bottom: -19px;
 }
-
 .slogan{
     color: #009bff;
     font-family: "Fira Sans";
@@ -146,7 +150,6 @@ body{
   transition: .5s ease-in-out;
   cursor: pointer;
 }
-
 .Icon span {
   display: block;
   position: absolute;
@@ -159,41 +162,33 @@ body{
   transform: rotate(0deg);
   transition: .2s ease-in-out;
 }
-
 .Icon span:nth-child(1),
 .Icon span:nth-child(3) {
   width: 48%;
   transform: rotate(45deg);
 }
-
 .Icon span:nth-child(1) {
   left: 8px;
   top: 18px;
 }
-
 .Icon span:nth-child(2) {
   transform: rotate(-45deg);
 }
-
 .Icon span:nth-child(3) {
   left: 16px;
   top: 23px;
 }
-
 .Icon.open span:nth-child(1),
 .Icon.open span:nth-child(3) {
     left: 3px;
 }
-
 .Icon.open span:nth-child(1) {
   top: 14px;
   transform: rotate(135deg);
 }
-
 .Icon.open span:nth-child(2) {
   transform: rotate(0deg);
 }
-
 .Icon.open span:nth-child(3) {
   top: 29px;
   transform: rotate(45deg);
@@ -218,25 +213,28 @@ body{
         transform: translateY(376px);
     }
 /*End Hero section */
-
-/*Deco & Constructing sections portfolio */
+/*Deco & Constructing sections portfolio - La clase "overlay-slide-in-left" Es la que hace el efecto de rollOver y adesplasamiento de la imagen  */
 .image-wrapper {
-  width: 100%;
-  height: auto;
+  border-radius: 4px;
   border: 1px solid rgba(0, 0, 0, 0.04);
+  height: auto;
   overflow: hidden;
   position: relative;
-  text-align: center;
-  border-radius: 4px;
+  /*text-align: center;*/
+  width: 100%;
 }
 .image-overlay-content {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  overflow: hidden;
-  top: 0;
+    background-color: rgba(0, 5, 14, 0.59);
+  /*width: 100%;
+  height: 100%;*/
+  bottom: 0;
   left: 0;
-  padding: 2%
+  overflow: hidden;
+  padding: 2% 5%;
+  position: absolute;
+}
+buttom.hollow.button.secondary {
+    min-width: 45%;
 }
 .overlay-slide-in-left img {
   transition: all 0.3s ease-in-out;
@@ -258,8 +256,7 @@ body{
 .overlay-slide-in-left h3 {
     margin: 0;
     font-size: 1.33em;
-    font-weight: bolder;
-}
+    font-weight: bolder; }
 .overlay-slide-in-left p {
     opacity: 0;
     transition: all 0.2s linear; }
@@ -273,8 +270,7 @@ body{
     text-transform: uppercase;
     box-shadow: 0 0 1px #000;
     /* position: relative; */
-    border-radius: 7px;
-    }
+    border-radius: 7px; }
 .overlay-slide-in-left .button:hover {
     background-color: #444; }
 .overlay-slide-in-left:hover .image-overlay-content {
@@ -286,10 +282,30 @@ body{
     opacity: 1;
     transition-delay: 0.4s;
     margin: 0 }
-
 .Margin-bottom-lead{
-    margin-bottom: 2rem !important
+    margin-bottom: 2rem !important }
+/*Modal con slider de imagenes */
+/* Demo Styles */
+.reveal{
+    background-color: rgba(2, 0, 8, 0.89);
+    overflow: hidden;
+    padding: 0;
 }
+nav.orbit-bullets {
+    position: absolute;
+    bottom: 48px;
+    right: 7%;
+}
+.orbit-figure {
+    height: 100vh !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul.orbit-container {
+    height: 100% !important;
+}
+/* Ends Modal con slider de imagenes */
   /*Deco and constructing sections portfolio ends*/
  /*Footer Contact*/
 .linkedin, .facebook, .twitter, .github, .youtube{
@@ -351,7 +367,6 @@ body{
     margin: 2em 0
 }
  /*Footer Contact End*/
-
 .Constructing{
     background-color: #181f27;
 }
@@ -382,8 +397,7 @@ body{
 .js-off-canvas-overlay{
     background-color: rgba(25, 20, 31, 0.78) }
 .Margin-top{
-    margin-top: 2rem
-}
+    margin-top: 2rem }
 /* Medium-Up Navigation */
 @media only screen and (min-width:40em){
   .logo-icon {
@@ -416,6 +430,10 @@ body{
   }
   .slogan{
       font-size: 1.4274em;
+  }
+  img.orbit-image {
+    height: 100%;
+    width: auto;
   }
 }
 @media screen and (min-width: 63.9375em) {}
