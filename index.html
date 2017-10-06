@@ -38,10 +38,12 @@
                               <textarea name="Quiere:" placeholder="Danos unos cuantos detalles de lo que tienes en mente construir"></textarea>
                             </label>
                         </div>
-                        <button class="column alert button small small-7" type="submit" value="Send" name="Go FB">Enviar
+                        <button class="column alert button small-7" type="submit" value="Send" name="Go FB">Enviar
                         </button>
-                        <div class="column button secondary small small-4" aria-label="Close menu" type="button" data-close>
-                          Cancel
+                        <div class="column button secondary small-4" aria-label="Close menu" type="button" data-close>
+                            <span aria-hidden="true">
+                                &times;
+                            </span> Cancelar
                           </div>
                       </div>
                     </form>
@@ -58,9 +60,9 @@
                         <div class="row text-center small-12 align-center" data-magellan data-bar-offset="-26" data-animation-easing="swing">
                             <p class="lead Margin-bottom-lead">Servicios de construcción y revestimientos decorativos liderados por profesionales emprendedores con experiencia que avala un producto de alto estándar.</p>
                             <div class="column large-12">
-                                <a data-toggle="offCanvasBottom" class="alert button small">Contáctanos</a>
-                                <a data-magellan-target="Constructing" href="#Constructing" class=" button small">Construcción general</a>
-                                <a data-magellan-target="Deco" href="#Deco" class=" button small">Revestimientos decorativos</a>
+                                <a data-toggle="offCanvasBottom" class="alert button">Contáctanos</a>
+                                <a data-magellan-target="Constructing" href="#Constructing" class=" button">Construcción general</a>
+                                <a data-magellan-target="Deco" href="#Deco" class=" button">Revestimientos decorativos</a>
                             </div>
                         </div>
                     </div>
@@ -68,77 +70,475 @@
                 <!-- Constructing Section -->
                 <section id="Constructing" class="Constructing flex-container full-height align-center align-middle" data-magellan-target="Constructing">
                     <div class="row collapse small-11 large-12 align-middle align-center small-margin-bottom">
-                        <!-- One -->
+                        <!-- One Diseño y planificación -->
                         <div class="columns small-12 medium-5 large-3">
-                            <div class="image-wrapper overlay-slide-in-left">
+                            <div class="image-wrapper">
+                                <!-- overlay-slide-in-left -->
                                 <img src="img/planificacion.jpg"/>
-                                <div class="image-overlay-content row align-center collapse align-middle">
-                                  <h3 class="column small-12">Diseño y planificación</h3>
-                                  <p class="column small-12 price">Asesoría y ejecución de proyectos constructivos habitacionales.</p>
-                                  <div class="flex-container align-spaced align-bottom small-12">
-                                      Francovich Bustamante
-                                  </div>
+                                <div class="image-overlay-content row collapse">
+                                  <h3 class="column small-12">
+                                      Diseño y planificación
+                                  </h3>
+                                  <p class="column small-12 price">
+                                      Asesoría y ejecución de proyectos constructivos habitacionales.
+                                  </p>
+                                  <buttom class="hollow button small secondary align-self-bottom"data-toggle="disenoPlanificacion">Conoce más</buttom>
                                 </div>
                             </div>
                         </div>
-                        <!-- Two -->
+                        <!-- Aquí termina la carta y empiesa el modal -->
+                        <div class="full reveal" id="disenoPlanificacion" data-reveal data-close-on-click="true" data-animation-in="scale-in-down" data-animation-out="scale-out-down">
+                            <!-- This demo uses flex grid but you can use float grid too -->
+                            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                                <div class="orbit-wrapper">
+                                    <div class="orbit-controls">
+                                      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                                      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                                    </div>
+                                    <!-- Start the slider images -->
+                                    <ul class="orbit-container">
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\diseno-planificacion\plano-efebe.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Planos</h4>
+                                                  <h3>Habitacionales completos</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+
+                                    </ul>
+                                    <nav class="orbit-bullets">
+                                        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+
+                                    </nav>
+                                </div>
+                            </div>
+                            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                                <span aria-hidden="true">
+                                    &times;
+                                </span>
+                            </button>
+                        </div>
+
+                        <!-- Two Obra Gruesa-->
                         <div class="columns small-12 medium-5 large-3">
-                            <div class="image-wrapper overlay-slide-in-left">
+                            <div class="image-wrapper">
+                                <!-- overlay-slide-in-left -->
                                 <img src="img/obra-gruesa.jpg"/>
-                                <div class="image-overlay-content row collapse align-center align-middle">
-                                  <h3 class="column small-12">Obra Gruesa</h3>
-                                  <p class="column small-12 price">Ejecución de sistemas constructivos estructurales</p>
-                                  <div class="flex-container align-spaced align-bottom small-12">
-                                      Francovich Bustamante
-                                  </div>
+                                <div class="image-overlay-content row collapse">
+                                  <h3 class="column small-12">
+                                      Obra Gruesa
+                                  </h3>
+                                  <p class="column small-12 price">
+                                      Ejecución de sistemas constructivos estructurales.
+                                  </p>
+                                  <buttom class="hollow button small secondary align-self-bottom"data-toggle="obraGruesa">Conoce más</buttom>
                                 </div>
                             </div>
                         </div>
-                        <!-- Three -->
-                        <div class="columns small-12 medium-5 large-3">
-                            <div class="image-wrapper overlay-slide-in-left">
-                                <img src="img/terminaciones.jpg" />
-                                <div class="image-overlay-content row collapse align-center align-middle">
-                                    <h3 class="column small-12">Terminaciones</h3>
-                                    <p class="column small-12 price">Alto estándar en todo tipo de terminaciones complementado con asesoría decorativa.</p>
-                                    <div class="flex-container align-spaced align-bottom small-12">
-                                        Francovich Bustamante
+                        <!-- Aquí termina la carta y empiesa el modal Obra gruesa-->
+                        <div class="full reveal" id="obraGruesa" data-reveal data-close-on-click="true" data-animation-in="scale-in-down" data-animation-out="scale-out-down">
+                            <!-- This demo uses flex grid but you can use float grid too -->
+                            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                                <div class="orbit-wrapper">
+                                    <div class="orbit-controls">
+                                      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                                      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
                                     </div>
+                                    <!-- Start the slider images -->
+                                    <ul class="orbit-container">
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\obra-gruesa\20160307_173913.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Obra Gruesa</h4>
+                                                  <h3>Construcion General EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\obra-gruesa\20160922_163822.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Obra Gruesa</h4>
+                                                  <h3>Construcion General EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\obra-gruesa\20160922_163829.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Obra Gruesa</h4>
+                                                  <h3>Construcion General EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\obra-gruesa\20160926_175648.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Obra Gruesa</h4>
+                                                  <h3>Construcion General EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\obra-gruesa\20170222_162522.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Obra Gruesa</h4>
+                                                  <h3>Construcion General EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\obra-gruesa\20170628_115628.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Obra Gruesa</h4>
+                                                  <h3>Construcion General EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\obra-gruesa\20170803_122715.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Obra Gruesa</h4>
+                                                  <h3>Construcion General EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+
+
+                                    </ul>
+                                    <nav class="orbit-bullets">
+                                        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+
+
+                                        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                                        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                                        <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                                        <button data-slide="4"><span class="show-for-sr">Five slide details.</span></button>
+                                        <button data-slide="5"><span class="show-for-sr">sixth slide details.</span></button>
+                                        <button data-slide="6"><span class="show-for-sr">Seventh slide details.</span></button>
+                                    </nav>
+                                </div>
+                            </div>
+                            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                                <span aria-hidden="true">
+                                    &times;
+                                </span>
+                            </button>
+                        </div>
+                        <!-- Three Terminaciones-->
+                        <div class="columns small-12 medium-5 large-3">
+                            <div class="image-wrapper">
+                                <!-- overlay-slide-in-left -->
+                                <img src="img\terminaciones.jpg"/>
+                                <div class="image-overlay-content row collapse">
+                                  <h3 class="column small-12">
+                                      Terminaciones
+                                  </h3>
+                                  <p class="column small-12 price">
+                                      Alto estándar complementado con asesoría decorativa.
+                                  </p>
+                                  <buttom class="hollow button small secondary align-self-bottom"data-toggle="Terminaciones">Conoce más</buttom>
                                 </div>
                             </div>
                         </div>
-                        <!-- Four -->
-                        <div class="columns small-12 medium-5 large-3">
-                            <div class="image-wrapper overlay-slide-in-left">
-                                <img src="img/instalaciones.jpg" />
-                                <div class="image-overlay-content row collapse align-center align-middle">
-                                    <h3 class="column small-12">Instalaciones</h3>
-                                    <p class="column small-12 price">Diseños y ejecución de instalaciones domiciliarias</p>
-                                    <div class="flex-container align-spaced align-bottom small-12">
-                                        Francovich Bustamante
+                        <!-- Aquí termina la carta y empiesa el modal Obra gruesa-->
+                        <div class="full reveal" id="Terminaciones" data-reveal data-close-on-click="true" data-animation-in="scale-in-down" data-animation-out="scale-out-down">
+                            <!-- This demo uses flex grid but you can use float grid too -->
+                            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                                <div class="orbit-wrapper">
+                                    <div class="orbit-controls">
+                                      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                                      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
                                     </div>
+                                    <!-- Start the slider images -->
+                                    <ul class="orbit-container">
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\terminaciones\20151221_114649.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Terminaciones</h4>
+                                                  <h3>Y asesoría decorativa EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\terminaciones\20160113_083002.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Terminaciones</h4>
+                                                  <h3>Y asesoría decorativa EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\terminaciones\20160226_124130.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Terminaciones</h4>
+                                                  <h3>Y asesoría decorativa EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\terminaciones\20160311_155426.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Terminaciones</h4>
+                                                  <h3>Y asesoría decorativa EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\terminaciones\20160311_155433.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Terminaciones</h4>
+                                                  <h3>Y asesoría decorativa EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\terminaciones\20160311_172134.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Terminaciones</h4>
+                                                  <h3>Y asesoría decorativa EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\terminaciones\20160318_164552.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Terminaciones</h4>
+                                                  <h3>Y asesoría decorativa EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\terminaciones\20160321_152000.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Terminaciones</h4>
+                                                  <h3>Y asesoría decorativa EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\terminaciones\20160510_153436.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Terminaciones</h4>
+                                                  <h3>Y asesoría decorativa EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\terminaciones\20160804_164509.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Terminaciones</h4>
+                                                  <h3>Y asesoría decorativa EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\terminaciones\20170121_125732.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Terminaciones</h4>
+                                                  <h3>Y asesoría decorativa EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\terminaciones\20170826_163105.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Terminaciones</h4>
+                                                  <h3>Y asesoría decorativa EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+
+
+                                    </ul>
+                                    <nav class="orbit-bullets">
+                                        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+
+
+                                        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                                        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                                        <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                                        <button data-slide="4"><span class="show-for-sr">Five slide details.</span></button>
+                                        <button data-slide="5"><span class="show-for-sr">sixth slide details.</span></button>
+                                        <button data-slide="6"><span class="show-for-sr">Seventh slide details.</span></button>
+                                        <button data-slide="7"><span class="show-for-sr">Eigthth slide details.</span></button>
+                                        <button data-slide="8"><span class="show-for-sr">Nineth slide details.</span></button>
+                                        <button data-slide="9"><span class="show-for-sr">Teenth slide details.</span></button>
+                                        <button data-slide="10"><span class="show-for-sr">Eleventh slide details.</span></button>
+                                        <button data-slide="11"><span class="show-for-sr">Twelveth slide details.</span></button>
+                                    </nav>
                                 </div>
                             </div>
+                            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                                <span aria-hidden="true">
+                                    &times;
+                                </span>
+                            </button>
+                        </div>
+                        <!-- Four Instalaciones-->
+                        <div class="columns small-12 medium-5 large-3">
+                            <div class="image-wrapper">
+
+                                <img src="img\instalaciones.jpg"/>
+                                <div class="image-overlay-content row collapse">
+                                  <h3 class="column small-12">
+                                      Instalaciones
+                                  </h3>
+                                  <p class="column small-12 price">
+                                      Diseños y ejecución de instalaciones domiciliarias.
+                                  </p>
+                                  <buttom class="hollow button small secondary align-self-bottom"data-toggle="Instalaciones">Conoce más</buttom>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Aquí termina la carta y empiesa el modal Obra gruesa-->
+                        <div class="full reveal" id="Instalaciones" data-reveal data-close-on-click="true" data-animation-in="scale-in-down" data-animation-out="scale-out-down">
+                            <!-- This demo uses flex grid but you can use float grid too -->
+                            <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                                <div class="orbit-wrapper">
+                                    <div class="orbit-controls">
+                                      <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                                      <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                                    </div>
+                                    <!-- Start the slider images -->
+                                    <ul class="orbit-container">
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\instalaciones\20151221_143502.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Instalaciones</h4>
+                                                  <h3>Perfectas en domicilios EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\instalaciones\20151221_143529.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Instalaciones</h4>
+                                                  <h3>Perfectas en domicilios EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\instalaciones\20160112_173040.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Instalaciones</h4>
+                                                  <h3>Perfectas en domicilios EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\instalaciones\20160120_153421.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Instalaciones</h4>
+                                                  <h3>Perfectas en domicilios EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\instalaciones\20160120_153433.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Instalaciones</h4>
+                                                  <h3>Perfectas en domicilios EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\instalaciones\20170131_090332.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Instalaciones</h4>
+                                                  <h3>Perfectas en domicilios EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\instalaciones\20170726_091651.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Instalaciones</h4>
+                                                  <h3>Perfectas en domicilios EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+                                      <li class="is-active orbit-slide">
+                                        <figure class="orbit-figure">
+                                          <img class="orbit-image" src="img\construcion-general\instalaciones\20170802_153234.jpg" alt="EFEBE">
+                                            <figcaption class="orbit-caption">
+                                                  <h4>Instalaciones</h4>
+                                                  <h3>Perfectas en domicilios EFEBE</h3>
+                                            </figcaption>
+                                        </figure>
+                                      </li>
+
+
+
+                                    </ul>
+                                    <nav class="orbit-bullets">
+                                        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+
+
+                                        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                                        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                                        <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                                        <button data-slide="4"><span class="show-for-sr">Five slide details.</span></button>
+                                        <button data-slide="5"><span class="show-for-sr">sixth slide details.</span></button>
+                                        <button data-slide="6"><span class="show-for-sr">Seventh slide details.</span></button>
+                                        <button data-slide="7"><span class="show-for-sr">Eigthth slide details.</span></button>
+                                    </nav>
+                                </div>
+                            </div>
+                            <button class="close-button" data-close aria-label="Close reveal" type="button">
+                                <span aria-hidden="true">
+                                    &times;
+                                </span>
+                            </button>
                         </div>
                         <!-- Title and Lead -->
                         <div class="column small-12 text-center Margin-top">
                             <div class="row align-center">
                                 <div class="column medium-8">
                                     <h2>Construción General</h2>
-                                    <p class="Margin-bottom-lead">Construcción, ampliación y remodelación habitacional.
-Con basta experiencia en obra gruesa, instalaciones y terminaciones. Involucrandonos desde la idea, la planificación, el desarrollo y la ejecución de cada proyecto, asegurando un resultado óptimo y de alto estándar.
-Contamos con equipos de trabajo calificados para cada área, dirigidos por profesionales del diseño y construcción. Teniendo como objetivo la calidad dentro de los plazos proyectados.</p>
+                                    <p class="Margin-bottom-lead">
+                                        Servicio de construcción integral a cargo de profesionales comprometidos en desarrollar proyectos con altos estándares de calidad ejecutados por equipos de trabajo calificados en cada área, poniendo a disposición conocimientos y experiencia con los cuales buscamos marcar diferencias.
+                                    </p>
                                 </div>
                             </div>
                         </div>
                 </section>
+                <!-- Revestimientos decorativos  -->
                 <section id="Deco" class="Deco flex-container full-height align-center align-middle" data-magellan-target="Deco">
                     <div class="row collapse small-11 large-12 align-middle align-center small-margin-bottom">
                         <!-- One Telas-->
                         <div class="columns small-12 medium-5 large-3">
                             <div class="image-wrapper">
-                                <!-- overlay-slide-in-left -->
+
                                 <img src="img/telas.png"/>
+
                                 <div class="image-overlay-content row collapse">
                                   <h3 class="column small-12">
                                       Telas
@@ -146,7 +546,7 @@ Contamos con equipos de trabajo calificados para cada área, dirigidos por profe
                                   <p class="column small-12 price">
                                       Entelados clásicos y en panel.
                                   </p>
-                                  <buttom class="hollow button secondary"data-toggle="animatedModal10">Conoce más</buttom>
+                                  <buttom class="hollow button small secondary align-self-bottom"data-toggle="animatedModal10">Conoce más</buttom>
                                 </div>
                             </div>
                         </div>
@@ -164,7 +564,7 @@ Contamos con equipos de trabajo calificados para cada área, dirigidos por profe
                                         <figure class="orbit-figure">
                                           <img class="orbit-image" src="img\paneles\entelado-paneles-muro-respaldo-cama-efebe-0.jpg" alt="EFEBE">
                                             <figcaption class="orbit-caption">
-                                                  <h4>Entelados en panelesEFEBE</h4>
+                                                  <h4>Entelados en paneles EFEBE</h4>
                                                   <h3>Muro respaldo de cama</h3>
                                             </figcaption>
                                         </figure>
@@ -173,7 +573,7 @@ Contamos con equipos de trabajo calificados para cada área, dirigidos por profe
                                         <figure class="orbit-figure">
                                           <img class="orbit-image" src="img\paneles\entelado-paneles-muro-respaldo-cama-efebe.jpg" alt="EFEBE">
                                           <figcaption class="orbit-caption">
-                                              <h4>Entelados en panelesEFEBE</h4>
+                                              <h4>Entelados en paneles EFEBE</h4>
                                               <h3>Muro respaldo de cama</h3>
                                           </figcaption>
                                         </figure>
@@ -203,7 +603,7 @@ Contamos con equipos de trabajo calificados para cada área, dirigidos por profe
                                           <figure class="orbit-figure">
                                               <img class="orbit-image" src="img\paneles\entelado-panel-sala-cine-efebe.jpg" alt="EFEBE Telas">
                                               <figcaption class="orbit-caption">
-                                                  <h4>Entelados en panelesEFEBE</h4>
+                                                  <h4>Entelados en paneles EFEBE</h4>
                                                   <h3>Sala de cine</h3>
                                               </figcaption>
                                           </figure>
@@ -231,7 +631,7 @@ Contamos con equipos de trabajo calificados para cada área, dirigidos por profe
                                           <figure class="orbit-figure">
                                               <img class="orbit-image" src="img\clasico\entelado-hall-acceso-efebe.jpg" alt="EFEBE Telas">
                                               <figcaption class="orbit-caption">
-                                                  <h4>Entelado ClásicoEFEBE</h4>
+                                                  <h4>Entelado Clásico EFEBE</h4>
                                                   <h3>Hall Acceso</h3>
                                               </figcaption>
                                           </figure>
@@ -240,7 +640,7 @@ Contamos con equipos de trabajo calificados para cada área, dirigidos por profe
                                           <figure class="orbit-figure">
                                               <img class="orbit-image" src="img\clasico\entelado-muro-cielo-efebe.jpg" alt="EFEBE Telas">
                                               <figcaption class="orbit-caption">
-                                                  <h4>Entelado ClásicoEFEBE</h4>
+                                                  <h4>Entelado Clásico EFEBE</h4>
                                                   <h3>Muro y cielo</h3>
                                               </figcaption>
                                           </figure>
@@ -249,7 +649,7 @@ Contamos con equipos de trabajo calificados para cada área, dirigidos por profe
                                           <figure class="orbit-figure">
                                               <img class="orbit-image" src="img\clasico\estelado-liso-pasillo-efebe.jpg" alt="EFEBE Telas">
                                               <figcaption class="orbit-caption">
-                                                  <h4>Entelado ClásicoEFEBE</h4>
+                                                  <h4>Entelado Clásico EFEBE</h4>
                                                   <h3>Pasillo</h3>
                                               </figcaption>
                                           </figure>
@@ -258,7 +658,7 @@ Contamos con equipos de trabajo calificados para cada área, dirigidos por profe
                                           <figure class="orbit-figure">
                                               <img class="orbit-image" src="img\clasico\tela-lista-caja-escala-efebe-0.jpg" alt="EFEBE Telas">
                                               <figcaption class="orbit-caption">
-                                                  <h4>Entelado ClásicoEFEBE</h4>
+                                                  <h4>Entelado Clásico EFEBE</h4>
                                                   <h3>Caja Escalera</h3>
                                               </figcaption>
                                           </figure>
@@ -267,7 +667,7 @@ Contamos con equipos de trabajo calificados para cada área, dirigidos por profe
                                           <figure class="orbit-figure">
                                               <img class="orbit-image" src="img\clasico\tela-lista-caja-escala-efebe.jpg" alt="EFEBE Telas">
                                               <figcaption class="orbit-caption">
-                                                  <h4>Entelado ClásicoEFEBE</h4>
+                                                  <h4>Entelado Clásico EFEBE</h4>
                                                   <h3>Caja Escalera</h3>
                                               </figcaption>
                                           </figure>
@@ -310,7 +710,7 @@ Contamos con equipos de trabajo calificados para cada área, dirigidos por profe
                                   <p class="column small-12 price">
                                       Papeles murales en Rafias y Exclusivos.
                                   </p>
-                                  <buttom class="hollow button secondary"data-toggle="animatedModal11">Conoce más</buttom>
+                                  <buttom class="hollow button small secondary align-self-bottom"data-toggle="animatedModal11">Conoce más</buttom>
                                 </div>
                             </div>
                         </div>
@@ -442,7 +842,7 @@ Contamos con equipos de trabajo calificados para cada área, dirigidos por profe
                                   <p class="column small-12 price">
                                       Pintura tipo peine cuadriculado en muro de living.
                                   </p>
-                                  <buttom class="hollow button secondary"data-toggle="pinturasModal">Conoce más</buttom>
+                                  <buttom class="hollow button small secondary align-self-bottom"data-toggle="pinturasModal">Conoce más</buttom>
                                 </div>
                             </div>
                         </div>
@@ -493,7 +893,7 @@ Contamos con equipos de trabajo calificados para cada área, dirigidos por profe
                                   <p class="column small-12 price">
                                       Nuevos e increibles estilos rusticos o modernos.
                                   </p>
-                                  <buttom class="hollow button secondary"data-toggle="remoModal">Conoce más</buttom>
+                                  <buttom class="hollow button small secondary align-self-bottom"data-toggle="remoModal">Conoce más</buttom>
                                 </div>
                             </div>
                         </div>
